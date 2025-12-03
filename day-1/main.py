@@ -31,7 +31,7 @@ def secret_entrance_part2(data, start_number):
     return count
 
 with open("data.txt") as file:
-    data_list = file.readlines()
+    sequence_data = file.readlines()
 
-secret_entrance_part1(data_list, 50)
-secret_entrance_part2(data_list, 50)
+secret_entrance_part1(sequence_data, 50)
+secret_entrance_part2(sequence_data, 50)

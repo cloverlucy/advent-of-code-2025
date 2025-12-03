@@ -1,4 +1,4 @@
-def lobby(digits):
+def lobby(data, digits):
     joltage_total = 0
     for bank in data:
         enumerated_data = list(enumerate(bank))
@@ -15,4 +15,7 @@ def lobby(digits):
     return joltage_total
 
 with open("data.txt") as file:
-    data = [i.replace("\n", "") for i in file.readlines()]
+    battery_data = [i.replace("\n", "") for i in file.readlines()]
+
+lobby(battery_data, 2)
+lobby(battery_data, 12)
